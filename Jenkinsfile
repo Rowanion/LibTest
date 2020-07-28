@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        build 'TestJob'
+        sh '''echo \'HelloWorld\'
+cmake --version'''
       }
     }
 
